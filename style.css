@@ -75,36 +75,62 @@ h2 {
 .linksbox {
     list-style: none;
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 0px;
+    left: 0px;
     z-index: 10;
     cursor: pointer;
+    width: 100%;
+    margin-top: 0px;
+    background-color: powderblue;
 }
 
 .links {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 20px;
-    float: left;
     padding-left: 9px;
     padding-right: 9px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: inline;
+    font-family: serif;
+    font-size: 25px;
 }
 
 .links:hover {
-    background-color: yellow;
+    text-decoration: underline;
+    font-size: 35px;
 }
 
 a {
+    color: red;
     text-decoration: none;
-    color: darkgreen;
+    text-shadow: 2px 2px gainsboro;
 }
 
 .writingss {
     color: blue;
     font-size: 18px;
+    text-shadow: none !important;
+    text-decoration: underline !important;
 }
 
 .writingss:hover {
     color: deeppink;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+#contact {
+    background-color: orange;
+}
+
+.socio h3 {
+    display: inline;
+}
+
+.end {
+    text-shadow: none !important;
+    color: blue;
 }
