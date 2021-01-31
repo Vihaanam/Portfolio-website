@@ -86,11 +86,13 @@ h2 {
 
 .links {
     font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
     padding-left: 9px;
     padding-right: 9px;
     padding-top: 5px;
     padding-bottom: 5px;
     display: inline;
+    font-family: serif;
     font-size: 25px;
 }
 
