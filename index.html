@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Tim Berners-Lee</title>
-    <link rel="icon" href="https://www.w3.org/2016/10/tbl.jpeg">
+
+<head>
+    <title>Tim Berners-Lee portfolio</title>
+    <link rel="icon" href="stbl.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div>
-        <center>
-            <ul class="linksbox">
-                <li class="links"><a href="#welcome">Home</a></li>
-                <li class="links"><a href="#bio">About</a></li>
-                <li class="links"><a href="#videos">Videos</a></li>
-                <li class="links"><a href="#work">Work</a></li>
-                <li class="links"><a href="#writing">Writings</a></li>
-                <li class="links"><a href="#contact">Contacts</a></li>
-            </ul>
-        </center>
+        <nav class="navbar-inverse nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Vihaan</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#bio">About</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#writing">Writings</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
         <section id="welcome">
-            <div class="inner">
-                <img id="image" src="https://qeprize.org/uploads/news/_1200x630_crop_center-center_82_none/TBL-Portrait.jpg?mtime=1579013140">
+                <img class="profile img-circle"  src="stbl.jpg">
                 <h1>I am</h1>
                 <h1 id="name">Tim Berners-Lee</h1>
                 <h2>I am the founder of www: World Wide Web</h2>
-            </div>
         </section>
         <section id="bio">
             <h2>About</h2>
@@ -75,14 +87,22 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5883486796965!2d72.88846041421347!3d19.125706755379813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c97f346053b7%3A0xacf72f56793d190a!2sWhitehat%20Education%20Technology%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1611921592723!5m2!1sen!2sin" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <br>
             <br>
-            <div class="socio">
-                <a class="end" href="mailto:someone@example.com?Subject=Hello">Gmail&nbsp;&nbsp;<i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>1234@gmail.com</h3></a>
+            <div class="socio col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <a href="mailto:someone@example.com?Subject=Hello">Gmail&nbsp;&nbsp;<i class="fa fa-envelope"></i>&nbsp;&nbsp;<h5>1234@gmail.com</h5></a>
                 <br>
-                <a class="end" href="#">Instagram&nbsp;&nbsp;<i class="fa fa-instagram"></i>&nbsp;&nbsp;<h3>myinstagramid</h3></a>
+                <a href="#">Instagram&nbsp;&nbsp;<i class="fa fa-instagram"></i>&nbsp;&nbsp;<h5>myinstagramid</h5></a>
             </div>
-            <br>
-            <br>
-            <br>
+            <div class="firstform col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <form>
+                    <span>Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+                    <br>
+                    <br>
+                    <span>Comment:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="comment" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="submit" class="btn btn-success">
+                </form>
+            </div>
         </section>
     </div>
 </body></html>
